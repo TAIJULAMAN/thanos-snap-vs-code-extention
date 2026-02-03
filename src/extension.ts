@@ -15,6 +15,22 @@ export function activate(context: vscode.ExtensionContext) {
 			return;
 		}
 
+		// Check for unsaved changes
+		if (editor.document.isDirty) {
+			const saveToProceed = 'Save & Snap';
+			const answer = await vscode.window.showWarningMessage(
+				'Thanos does not snap unsaved universes! Please save your file first.',
+				saveToProceed,
+				'Cancel'
+			);
+
+			if (answer === saveToProceed) {
+				await editor.document.save();
+			} else {
+				return;
+			}
+		}
+
 		// Load configuration
 		const configManager = new ConfigManager();
 

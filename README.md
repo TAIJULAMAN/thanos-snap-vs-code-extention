@@ -1,20 +1,20 @@
-# ⚡ VS Thanos Snap
+# VS Thanos Snap
 
 > *"Perfectly balanced, as all code should be."*
 
 Bring the power of Thanos to your codebase! This VS Code extension randomly deletes 50% of "expendable" code (comments, console logs, and empty lines) with a cinematic dust effect animation.
 
 
-## ✨ Features
+## Features
 
-- 🎯 **Smart Detection**: Automatically identifies expendable code across multiple languages
-- 🎬 **Cinematic Animation**: Watch your code fade away with a dust effect
-- ⚙️ **Highly Configurable**: Customize what gets deleted and how
-- 🌍 **Multi-Language Support**: Works with JavaScript, TypeScript, Python, Java, C#, C++, Go, Rust, PHP, Ruby, and more
-- 🛡️ **Safe by Default**: Confirmation dialog before deletion (can be disabled)
-- 📊 **Statistics**: See exactly what was deleted
+- **Smart Detection**: Automatically identifies expendable code across multiple languages
+- **Cinematic Animation**: Watch your code fade away with a dust effect
+- **Highly Configurable**: Customize what gets deleted and how
+- **Multi-Language Support**: Works with JavaScript, TypeScript, Python, Java, C#, C++, Go, Rust, PHP, Ruby, and more
+- **Safe by Default**: Confirmation dialog before deletion (can be disabled)
+- **Statistics**: See exactly what was deleted
 
-## 📦 Installation
+## Installation
 
 ### From VS Code Marketplace (Coming Soon)
 1. Open VS Code
@@ -22,25 +22,15 @@ Bring the power of Thanos to your codebase! This VS Code extension randomly dele
 3. Search for "VS Thanos Snap"
 4. Click Install
 
-## 🚀 Usage
+## Usage
 
 1. Open any code file
 2. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 3. Type "Thanos Snap: Balance the Code"
 4. Confirm the snap (if confirmation is enabled)
-5. Watch the magic happen! ✨
+5. Watch the magic happen!
 
-### Keyboard Shortcut (Optional)
-Add a custom keybinding in your `keybindings.json`:
-```json
-{
-  "key": "ctrl+alt+t",
-  "command": "vs-thanos-snap.snap",
-  "when": "editorTextFocus"
-}
-```
-
-## ⚙️ Configuration
+## Configuration
 
 Access settings via `File > Preferences > Settings` and search for "Thanos Snap"
 
@@ -83,7 +73,7 @@ Access settings via `File > Preferences > Settings` and search for "Thanos Snap"
 }
 ```
 
-## 🎯 What Gets Deleted?
+## What Gets Deleted?
 
 ### Comments
 - JavaScript/TypeScript: `//`, `/*`, `*/`
@@ -102,7 +92,7 @@ Access settings via `File > Preferences > Settings` and search for "Thanos Snap"
 ### Empty Lines
 Any line with only whitespace
 
-## 📝 Examples
+## Examples
 
 ### Before Snap
 ```javascript
@@ -136,7 +126,7 @@ function calculateTotal(items) {
 
 *Note: Results are random - approximately 50% of expendable lines are deleted*
 
-## 🌍 Supported Languages
+## Supported Languages
 
 - JavaScript / TypeScript
 - Python
@@ -147,16 +137,6 @@ function calculateTotal(items) {
 - PHP
 - Ruby
 - And more coming soon!
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📄 License
 
